@@ -1,0 +1,323 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#FFFFFFFF" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical" >
+
+        <!-- 第一行 -->
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="40dip"
+                android:gravity="left"
+                android:orientation="horizontal" >
+
+                <Button
+                    android:id="@+id/ly1_down"
+                    android:layout_width="40dip"
+                    android:layout_height="40dip"
+                    android:text="-" />
+
+                <TextView
+                    android:id="@+id/ly1_label"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dip"
+                    android:layout_marginLeft="10dip"
+                    android:gravity="center"
+                    android:text="1000" />
+
+                <Button
+                    android:id="@+id/ly1_up"
+                    android:layout_width="40dip"
+                    android:layout_height="40dip"
+                    android:layout_marginLeft="10dip"
+                    android:text="+" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="40dip"
+                android:gravity="left"
+                android:orientation="horizontal" >
+
+                <Button
+                    android:id="@+id/ly2_down"
+                    android:layout_width="40dip"
+                    android:layout_height="40dip"
+                    android:text="-" />
+
+                <TextView
+                    android:id="@+id/ly2_label"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dip"
+                    android:layout_marginLeft="10dip"
+                    android:gravity="center"
+                    android:text="1000" />
+
+                <Button
+                    android:id="@+id/ly2_up"
+                    android:layout_width="40dip"
+                    android:layout_height="40dip"
+                    android:layout_marginLeft="10dip"
+                    android:text="+" />
+            </LinearLayout>
+
+            <!-- 左右概率调整 -->
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="40dip"
+                android:gravity="left"
+                android:orientation="horizontal" >
+
+                <Button
+                    android:id="@+id/ly3_down"
+                    android:layout_width="40dip"
+                    android:layout_height="40dip"
+                    android:text="-" />
+
+                <TextView
+                    android:id="@+id/ly3_label"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dip"
+                    android:layout_marginLeft="10dip"
+                    android:gravity="center"
+                    android:text="5" />
+
+                <Button
+                    android:id="@+id/ly3_up"
+                    android:layout_width="40dip"
+                    android:layout_height="40dip"
+                    android:layout_marginLeft="10dip"
+                    android:text="+" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <!-- 第二行 -->
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="40dip"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <!-- 左右重复次数 -左 -->
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="40dip"
+                android:orientation="horizontal" >
+
+                <Button
+                    android:id="@+id/bt_repeattimes_down_left"
+                    android:layout_width="40dip"
+                    android:layout_height="40dip"
+                    android:text="-" />
+
+                <TextView
+                    android:id="@+id/tv_repeattimes_left"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dip"
+                    android:layout_marginLeft="10dip"
+                    android:gravity="center"
+                    android:text="0" />
+
+                <Button
+                    android:id="@+id/bt_repeattimes_up_left"
+                    android:layout_width="40dip"
+                    android:layout_height="40dip"
+                    android:layout_marginLeft="10dip"
+                    android:text="+" />
+            </LinearLayout>
+            <!-- 左右重复次数 - 右 -->
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="40dip"
+                android:orientation="horizontal" >
+
+                <Button
+                    android:id="@+id/bt_repeattimes_down_right"
+                    android:layout_width="40dip"
+                    android:layout_height="40dip"
+                    android:text="-" />
+
+                <TextView
+                    android:id="@+id/tv_repeattimes_right"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dip"
+                    android:layout_marginLeft="10dip"
+                    android:gravity="center"
+                    android:text="0" />
+
+                <Button
+                    android:id="@+id/bt_repeattimes_up_right"
+                    android:layout_width="40dip"
+                    android:layout_height="40dip"
+                    android:layout_marginLeft="10dip"
+                    android:text="+" />
+            </LinearLayout>
+            <!-- 间隔时间调整 -->
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="40dip"
+                android:orientation="horizontal" >
+
+                <Button
+                    android:id="@+id/ly4_down"
+                    android:layout_width="40dip"
+                    android:layout_height="40dip"
+                    android:text="-" />
+
+                <TextView
+                    android:id="@+id/ly4_label"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dip"
+                    android:layout_marginLeft="10dip"
+                    android:gravity="center"
+                    android:text="500" />
+
+                <Button
+                    android:id="@+id/ly4_up"
+                    android:layout_width="40dip"
+                    android:layout_height="40dip"
+                    android:layout_marginLeft="10dip"
+                    android:text="+" />
+            </LinearLayout>
+
+            <!-- 声音开关 -->
+
+            <ToggleButton
+                android:id="@+id/tbtn2"
+                android:layout_width="50dip"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:checked="false"
+                android:textOff="关"
+                android:textOn="开" />
+        </LinearLayout>
+        <!-- 第3行 -->
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="40dip"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <!-- 每间隔几次停一下 -->
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="40dip"
+                android:orientation="horizontal" >
+
+                <Button
+                    android:id="@+id/bt_stoptimes_down"
+                    android:layout_width="40dip"
+                    android:layout_height="40dip"
+                    android:text="-" />
+
+                <TextView
+                    android:id="@+id/tv_stoptimes"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dip"
+                    android:layout_marginLeft="10dip"
+                    android:gravity="center"
+                    android:text="0" />
+
+                <Button
+                    android:id="@+id/bt_stoptimes_up"
+                    android:layout_width="40dip"
+                    android:layout_height="40dip"
+                    android:layout_marginLeft="10dip"
+                    android:text="+" />
+            </LinearLayout>
+
+            <!-- 每间隔几次停的时间 -->
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="40dip"
+                android:orientation="horizontal" >
+
+                <Button
+                    android:id="@+id/bt_stopinterval_down"
+                    android:layout_width="40dip"
+                    android:layout_height="40dip"
+                    android:text="-" />
+
+                <TextView
+                    android:id="@+id/tv_stopinterval"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dip"
+                    android:layout_marginLeft="10dip"
+                    android:gravity="center"
+                    android:text="5000" />
+
+                <Button
+                    android:id="@+id/bt_stopinterval_up"
+                    android:layout_width="40dip"
+                    android:layout_height="40dip"
+                    android:layout_marginLeft="10dip"
+                    android:text="+" />
+            </LinearLayout>
+        </LinearLayout>
+        <!-- 第4行 -->
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dip"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal" >
+
+            <!-- 开关 -->
+
+            <ToggleButton
+                android:id="@+id/tbtn1"
+                android:layout_width="100dip"
+                android:layout_height="100dip"
+                android:layout_gravity="center_horizontal"
+                android:checked="false"
+                android:textOff="继续"
+                android:textOn="暂停"
+                android:textSize="20dip" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <!-- 内容 -->
+
+    <RelativeLayout
+        android:id="@+id/bglayout"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical" >
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="50dip"
+            android:layout_height="50dip" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_gravity="center"
+            android:gravity="bottom|center_horizontal"
+            android:text="100"
+            android:textSize="50dip" />
+    </RelativeLayout>
+
+</RelativeLayout>
